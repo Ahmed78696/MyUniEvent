@@ -16,4 +16,4 @@ This project is ready to import in Android Studio (Giraffe+). It demonstrates:
 
 ## Notes
 - The profile screen uses a tiny sample PNG as avatar bytes for demo. Replace with gallery picker to upload real images.
-- Push notifications (FCM) are not included to keep setup simple.
+
