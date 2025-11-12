@@ -1,6 +1,6 @@
 # MyUniEvents (Kotlin, Jetpack Compose, Room, Firebase, DataStore, WorkManager)
 
-This project is ready to import in Android Studio (Giraffe+). It demonstrates:
+This project is ready to import in Android Studio. It demonstrates:
 - Room for offline events
 - Firebase Auth + Firestore for announcements (live updates)
 - Firebase Storage for avatar upload
