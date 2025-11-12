@@ -8,12 +8,6 @@ This project is ready to import in Android Studio (Giraffe+). It demonstrates:
 - DataStore-powered Dark Mode toggle (persistent)
 - Jetpack Compose Material3 UI with snackbars, validation, bottom navigation
 
-## Setup
-1. In Firebase Console, create a project and add an **Android app** with package `com.example.myunievents`.
-2. Download `google-services.json` and place it under `app/` directory.
-3. In Firestore, create (or let the app create) a collection named `announcements`.
-4. Enable **Email/Password** sign-in in Authentication.
-5. (Optional) Enable Firebase Storage (default rules for development).
 
 ## Run
 - Open this folder in Android Studio.
