@@ -64,30 +64,6 @@ fun MyEventsScreen(nav: NavController) {
                     containerColor = MaterialTheme.colorScheme.primaryContainer
                 )
             )
-        }
-    ) { paddingValues ->
-        if (list.isEmpty()) {
-            EmptyEventsState(modifier = Modifier.padding(paddingValues))
-        } else {
-            LazyColumn(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(paddingValues)
-                    .padding(horizontal = 16.dp),
-                verticalArrangement = Arrangement.spacedBy(12.dp)
-            ) {
-                item { Spacer(modifier = Modifier.height(4.dp)) } // Top padding
-                items(list, key = { it.id }) { event ->
-                    val dismissState = rememberSwipeToDismissBoxState(
-                        confirmValueChange = {
-                            if (it == SwipeToDismissBoxValue.EndToStart) {
-                                vm.deleteEvent(event)
-                                return@rememberSwipeToDismissBoxState true
-                            }
-                            false
-                        }
-                    )
-
                     SwipeToDismissBox(
                         state = dismissState,
                         backgroundContent = {

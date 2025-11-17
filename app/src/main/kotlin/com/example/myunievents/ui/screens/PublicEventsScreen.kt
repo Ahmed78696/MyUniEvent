@@ -58,7 +58,7 @@ fun PublicEventsScreen(navController: NavController) {
     var searchQuery by remember { mutableStateOf("") }
     var selectedCategory by remember { mutableStateOf("All") }
 
-    val categories = listOf( "Academic", "Social", "Sports", "Workshop","experience", "Other")
+    val categories = listOf("All", "Academic", "Social", "Sports", "Workshop","experience", "Other")
 
     val filteredEvents = publicEvents.filter { event ->
         val matchesCategory = selectedCategory == "All" || event.category.equals(selectedCategory, ignoreCase = true)
